@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "MovieViewController.h"
-#import "DVDViewController.h"
 
 @implementation AppDelegate
 
@@ -25,12 +24,14 @@
     
     movieNavigationController.tabBarItem.title = @"Box Office";
     movieNavigationController.tabBarItem.image = [UIImage imageNamed:@"Ticket"];
-
-    DVDViewController *dvdViewController = [[DVDViewController alloc] init];
+    movieViewController.title = @"Movies";
+    
+    MovieViewController *dvdViewController = [[MovieViewController alloc] init];
     UINavigationController *dvdNavigationController = [[UINavigationController alloc] initWithRootViewController:dvdViewController];
     
     dvdNavigationController.tabBarItem.title = @"Top DVDs";
     dvdNavigationController.tabBarItem.image = [UIImage imageNamed:@"DVD"];
+    dvdViewController.title = @"DVDs";
 
     tabBarController.viewControllers = @[movieNavigationController, dvdNavigationController];
 

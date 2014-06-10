@@ -24,8 +24,6 @@
 		6450117A19417FF0000B1A7F /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6450117819417FF0000B1A7F /* MovieViewController.xib */; };
 		64501183194182E2000B1A7F /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64501181194182E2000B1A7F /* DetailsViewController.m */; };
 		64501184194182E2000B1A7F /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64501182194182E2000B1A7F /* DetailsViewController.xib */; };
-		64501188194679F9000B1A7F /* DVDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64501186194679F9000B1A7F /* DVDViewController.m */; };
-		64501189194679F9000B1A7F /* DVDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64501187194679F9000B1A7F /* DVDViewController.xib */; };
 		6465B8001946CDE200CCBAE4 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6465B7FE1946CDE200CCBAE4 /* MovieCell.m */; };
 		6465B8011946CDE200CCBAE4 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6465B7FF1946CDE200CCBAE4 /* MovieCell.xib */; };
 /* End PBXBuildFile section */
@@ -64,9 +62,6 @@
 		64501180194182E2000B1A7F /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		64501181194182E2000B1A7F /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		64501182194182E2000B1A7F /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
-		64501185194679F9000B1A7F /* DVDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVDViewController.h; sourceTree = "<group>"; };
-		64501186194679F9000B1A7F /* DVDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVDViewController.m; sourceTree = "<group>"; };
-		64501187194679F9000B1A7F /* DVDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DVDViewController.xib; sourceTree = "<group>"; };
 		6465B7FD1946CDE200CCBAE4 /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
 		6465B7FE1946CDE200CCBAE4 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		6465B7FF1946CDE200CCBAE4 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
@@ -144,9 +139,6 @@
 				6465B7FF1946CDE200CCBAE4 /* MovieCell.xib */,
 				6450115619417FBB000B1A7F /* AppDelegate.h */,
 				6450115719417FBB000B1A7F /* AppDelegate.m */,
-				64501185194679F9000B1A7F /* DVDViewController.h */,
-				64501186194679F9000B1A7F /* DVDViewController.m */,
-				64501187194679F9000B1A7F /* DVDViewController.xib */,
 				6450115919417FBB000B1A7F /* Images.xcassets */,
 				6450114E19417FBB000B1A7F /* Supporting Files */,
 			);
@@ -263,7 +255,6 @@
 			files = (
 				6450117A19417FF0000B1A7F /* MovieViewController.xib in Resources */,
 				6465B8011946CDE200CCBAE4 /* MovieCell.xib in Resources */,
-				64501189194679F9000B1A7F /* DVDViewController.xib in Resources */,
 				64501184194182E2000B1A7F /* DetailsViewController.xib in Resources */,
 				6450115219417FBB000B1A7F /* InfoPlist.strings in Resources */,
 				6450115A19417FBB000B1A7F /* Images.xcassets in Resources */,
@@ -353,7 +344,6 @@
 				6465B8001946CDE200CCBAE4 /* MovieCell.m in Sources */,
 				6450117919417FF0000B1A7F /* MovieViewController.m in Sources */,
 				6450115419417FBB000B1A7F /* main.m in Sources */,
-				64501188194679F9000B1A7F /* DVDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

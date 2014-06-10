@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailsViewController : UIViewController
+@property (strong,nonatomic) NSDictionary *movie;
 
 @end

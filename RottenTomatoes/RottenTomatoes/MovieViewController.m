@@ -7,6 +7,8 @@
 //
 
 #import "MovieViewController.h"
+
+#import "DetailsViewController.h"
 #import "MovieCell.h"
 
 @interface MovieViewController ()
@@ -22,7 +24,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Movies";
+        // Do things here
     }
     return self;
 }
@@ -33,7 +35,12 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    NSString *url = @"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=nctwhbfyy2rvbgzu2x4fq6c6";
+    NSString *url;
+    if ([self.title isEqualToString:@"Movies"]) {
+        url = @"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=nctwhbfyy2rvbgzu2x4fq6c6";
+    } else { // DVDs
+        url = @"http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=nctwhbfyy2rvbgzu2x4fq6c6";
+    }
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
@@ -70,6 +77,15 @@
     cell.titleLabel.text = movie[@"title"];
     cell.synopsisLabel.text = movie[@"synopsis"];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    DetailsViewController *dvc = [[DetailsViewController alloc] init];
+    dvc.movie = self.movies[indexPath.row];
+    
+    [self.navigationController pushViewController:dvc animated:YES];
 }
 
 @end
