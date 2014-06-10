@@ -12,7 +12,7 @@
 #import "MovieCell.h"
 
 #import "EGORefreshTableHeaderView.h"
-#import "MBProgressHUD.h".
+#import "MBProgressHUD.h"
 #import "UIImageView+AFNetworking.h"
 
 @interface MovieViewController ()
