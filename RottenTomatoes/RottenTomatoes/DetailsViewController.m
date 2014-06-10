@@ -12,9 +12,9 @@
 
 @interface DetailsViewController ()
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UILabel *criticScoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *audienceScoreLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *synopsisLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *posterImage;
 
@@ -35,10 +35,20 @@
 {
     [super viewDidLoad];
     
-    self.titleLabel.text = self.movie[@"title"];
+    NSDictionary *ratings = self.movie[@"ratings"];
+
+    self.title= self.movie[@"title"];
     self.synopsisLabel.text = self.movie[@"synopsis"];
     [self.synopsisLabel setNumberOfLines:0];
     [self.synopsisLabel sizeToFit];
+    NSString *criticRating = [NSString stringWithFormat:@"%@ (%@%%)",
+                ratings[@"critics_rating"], ratings[@"critics_score"]];
+    NSString *audienceRating = [NSString stringWithFormat:@"%@ (%@%%)",
+                              ratings[@"audience_rating"],
+                              ratings[@"audience_score"]];
+    self.criticScoreLabel.text = criticRating;
+    self.audienceScoreLabel.text = audienceRating;
+    
     //   [self.overlayView addSubview:self.synopsisLabel];
 
     NSURL *posterUrl = [NSURL URLWithString:[self.movie valueForKeyPath:@"posters.detailed"]];

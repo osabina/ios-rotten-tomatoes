@@ -11,6 +11,7 @@
 #import "DetailsViewController.h"
 #import "MovieCell.h"
 
+#import "CSNotificationView.h"
 #import "EGORefreshTableHeaderView.h"
 #import "MBProgressHUD.h"
 #import "UIImageView+AFNetworking.h"
@@ -107,16 +108,27 @@
     }
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-        id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        NSLog(@"%@", object);
+        if (response == nil) {
+            if (connectionError != nil) {
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
+                [CSNotificationView  showInViewController:self
+                                    style:CSNotificationViewStyleError
+                                    message:@"Network Error"];
+                
+            }
+        } else {
+            id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+            NSLog(@"%@", object);
     
-        self.movies = object[@"movies"];
-        [self.tableView reloadData];
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
+            self.movies = object[@"movies"];
+            [self.tableView reloadData];
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        }
     }];
 }
+
 
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
