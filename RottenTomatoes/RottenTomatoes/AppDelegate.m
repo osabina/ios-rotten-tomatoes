@@ -20,6 +20,7 @@
     
     // Create the two view controllers, each within a navigation controller
     MovieViewController *movieViewController = [[MovieViewController alloc] init];
+    
     UINavigationController *movieNavigationController = [[UINavigationController alloc] initWithRootViewController:movieViewController];
     
     movieNavigationController.tabBarItem.title = @"Box Office";

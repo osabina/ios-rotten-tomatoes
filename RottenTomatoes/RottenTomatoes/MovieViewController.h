@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MovieViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+#import "EGORefreshTableHeaderView.h"
 
+
+@interface MovieViewController : UIViewController <EGORefreshTableHeaderDelegate, UITableViewDataSource,UITableViewDelegate>
+{
+    
+EGORefreshTableHeaderView *_refreshHeaderView;
+
+//  Reloading var should really be your tableviews datasource
+//  Putting it here for demo purposes
+BOOL _reloading;
+}
+
+- (void)reloadTableViewDataSource;
+- (void)doneLoadingTableViewData;
 @end
