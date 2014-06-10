@@ -8,7 +8,15 @@
 
 #import "DetailsViewController.h"
 
+#import "UIImageView+AFNetworking.h"
+
 @interface DetailsViewController ()
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *synopsisLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *posterImage;
 
 @end
 
@@ -26,7 +34,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.titleLabel.text = self.movie[@"title"];
+    self.synopsisLabel.text = self.movie[@"synopsis"];
+    [self.synopsisLabel setNumberOfLines:0];
+    [self.synopsisLabel sizeToFit];
+    //   [self.overlayView addSubview:self.synopsisLabel];
+
+    NSURL *posterUrl = [NSURL URLWithString:[self.movie valueForKeyPath:@"posters.detailed"]];
+    [self.posterImage setImageWithURL:posterUrl placeholderImage:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning
