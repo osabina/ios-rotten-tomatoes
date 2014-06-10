@@ -1,1255 +1,456 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0FB91EDF072C44C0B04B25D8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>1A31FB57D3E241F0B142C138</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-RottenTomatoesTests.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-RottenTomatoesTests.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1F2ADCBAFC0E432B853E118E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7FED79CABDFB45AA9948CEA8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>258551A0A8DE41A2922085D0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>4F8AD7E5BA214C7980957FE3</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>4FFE045BE65643A9A712BE2A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>83566612D1304BAD812A3826</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450113B19417FBB000B1A7F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6450114D19417FBB000B1A7F</string>
-				<string>6450116619417FBB000B1A7F</string>
-				<string>6450114619417FBB000B1A7F</string>
-				<string>6450114519417FBB000B1A7F</string>
-				<string>94E069F6727B4A948EBA78C2</string>
-				<string>1A31FB57D3E241F0B142C138</string>
-				<string>81DF1BC8794A431085ED3FAC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450113C19417FBB000B1A7F</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Ozzie Sabina</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>6450115E19417FBB000B1A7F</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>6450114319417FBB000B1A7F</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>6450113F19417FBB000B1A7F</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>6450113B19417FBB000B1A7F</string>
-			<key>productRefGroup</key>
-			<string>6450114519417FBB000B1A7F</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>6450114319417FBB000B1A7F</string>
-				<string>6450115E19417FBB000B1A7F</string>
-			</array>
-		</dict>
-		<key>6450113F19417FBB000B1A7F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6450116F19417FBB000B1A7F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6450114019417FBB000B1A7F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6450115819417FBB000B1A7F</string>
-				<string>64501183194182E2000B1A7F</string>
-				<string>6450117E1941804C000B1A7F</string>
-				<string>6450117919417FF0000B1A7F</string>
-				<string>6450115419417FBB000B1A7F</string>
-				<string>64501188194679F9000B1A7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6450114119417FBB000B1A7F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6450114A19417FBB000B1A7F</string>
-				<string>6450114C19417FBB000B1A7F</string>
-				<string>6450114819417FBB000B1A7F</string>
-				<string>F5289B9183704DE597031FC0</string>
-				<string>4FFE045BE65643A9A712BE2A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6450114219417FBB000B1A7F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6450117A19417FF0000B1A7F</string>
-				<string>64501189194679F9000B1A7F</string>
-				<string>6450117F1941804C000B1A7F</string>
-				<string>64501184194182E2000B1A7F</string>
-				<string>6450115219417FBB000B1A7F</string>
-				<string>6450115A19417FBB000B1A7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6450114319417FBB000B1A7F</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6450117019417FBB000B1A7F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>258551A0A8DE41A2922085D0</string>
-				<string>6450114019417FBB000B1A7F</string>
-				<string>6450114119417FBB000B1A7F</string>
-				<string>6450114219417FBB000B1A7F</string>
-				<string>4F8AD7E5BA214C7980957FE3</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RottenTomatoes</string>
-			<key>productName</key>
-			<string>RottenTomatoes</string>
-			<key>productReference</key>
-			<string>6450114419417FBB000B1A7F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>6450114419417FBB000B1A7F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RottenTomatoes.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>6450114519417FBB000B1A7F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6450114419417FBB000B1A7F</string>
-				<string>6450115F19417FBB000B1A7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450114619417FBB000B1A7F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6450114719417FBB000B1A7F</string>
-				<string>6450114919417FBB000B1A7F</string>
-				<string>6450114B19417FBB000B1A7F</string>
-				<string>6450116019417FBB000B1A7F</string>
-				<string>DB1D0D01EED04E9CB79F35D4</string>
-				<string>7FED79CABDFB45AA9948CEA8</string>
-				<string>83566612D1304BAD812A3826</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450114719417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>6450114819417FBB000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450114719417FBB000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450114919417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>6450114A19417FBB000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450114919417FBB000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450114B19417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>6450114C19417FBB000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450114B19417FBB000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450114D19417FBB000B1A7F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6450117619417FF0000B1A7F</string>
-				<string>6450117719417FF0000B1A7F</string>
-				<string>6450117819417FF0000B1A7F</string>
-				<string>64501180194182E2000B1A7F</string>
-				<string>64501181194182E2000B1A7F</string>
-				<string>64501182194182E2000B1A7F</string>
-				<string>6450117B1941804C000B1A7F</string>
-				<string>6450117C1941804C000B1A7F</string>
-				<string>6450117D1941804C000B1A7F</string>
-				<string>6450115619417FBB000B1A7F</string>
-				<string>6450115719417FBB000B1A7F</string>
-				<string>64501185194679F9000B1A7F</string>
-				<string>64501186194679F9000B1A7F</string>
-				<string>64501187194679F9000B1A7F</string>
-				<string>6450115919417FBB000B1A7F</string>
-				<string>6450114E19417FBB000B1A7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RottenTomatoes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450114E19417FBB000B1A7F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6450114F19417FBB000B1A7F</string>
-				<string>6450115019417FBB000B1A7F</string>
-				<string>6450115319417FBB000B1A7F</string>
-				<string>6450115519417FBB000B1A7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450114F19417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>RottenTomatoes-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450115019417FBB000B1A7F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6450115119417FBB000B1A7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450115119417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450115219417FBB000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450115019417FBB000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450115319417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450115419417FBB000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450115319417FBB000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450115519417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>RottenTomatoes-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450115619417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450115719417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450115819417FBB000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450115719417FBB000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450115919417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450115A19417FBB000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450115919417FBB000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450115B19417FBB000B1A7F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6450116D19417FBB000B1A7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6450115C19417FBB000B1A7F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6450116119417FBB000B1A7F</string>
-				<string>6450116319417FBB000B1A7F</string>
-				<string>6450116219417FBB000B1A7F</string>
-				<string>1F2ADCBAFC0E432B853E118E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6450115D19417FBB000B1A7F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6450116B19417FBB000B1A7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6450115E19417FBB000B1A7F</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6450117319417FBB000B1A7F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>0FB91EDF072C44C0B04B25D8</string>
-				<string>6450115B19417FBB000B1A7F</string>
-				<string>6450115C19417FBB000B1A7F</string>
-				<string>6450115D19417FBB000B1A7F</string>
-				<string>B796A63D0017463F97AC6DC9</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>6450116519417FBB000B1A7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RottenTomatoesTests</string>
-			<key>productName</key>
-			<string>RottenTomatoesTests</string>
-			<key>productReference</key>
-			<string>6450115F19417FBB000B1A7F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>6450115F19417FBB000B1A7F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RottenTomatoesTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>6450116019417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>6450116119417FBB000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450116019417FBB000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450116219417FBB000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450114719417FBB000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450116319417FBB000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450114B19417FBB000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450116419417FBB000B1A7F</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>6450113C19417FBB000B1A7F</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>6450114319417FBB000B1A7F</string>
-			<key>remoteInfo</key>
-			<string>RottenTomatoes</string>
-		</dict>
-		<key>6450116519417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>6450114319417FBB000B1A7F</string>
-			<key>targetProxy</key>
-			<string>6450116419417FBB000B1A7F</string>
-		</dict>
-		<key>6450116619417FBB000B1A7F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6450116C19417FBB000B1A7F</string>
-				<string>6450116719417FBB000B1A7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RottenTomatoesTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450116719417FBB000B1A7F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6450116819417FBB000B1A7F</string>
-				<string>6450116919417FBB000B1A7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450116819417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>RottenTomatoesTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450116919417FBB000B1A7F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6450116A19417FBB000B1A7F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450116A19417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450116B19417FBB000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450116919417FBB000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450116C19417FBB000B1A7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>RottenTomatoesTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450116D19417FBB000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450116C19417FBB000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450116F19417FBB000B1A7F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6450117019417FBB000B1A7F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6450117219417FBB000B1A7F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6450117219417FBB000B1A7F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>81DF1BC8794A431085ED3FAC</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>RottenTomatoes/RottenTomatoes-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RottenTomatoes/RottenTomatoes-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6450117319417FBB000B1A7F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6450117519417FBB000B1A7F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6450117519417FBB000B1A7F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>1A31FB57D3E241F0B142C138</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/RottenTomatoes.app/RottenTomatoes</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>RottenTomatoes/RottenTomatoes-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RottenTomatoesTests/RottenTomatoesTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6450117619417FF0000B1A7F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MovieViewController.h</string>
-			<key>path</key>
-			<string>../MovieViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450117719417FF0000B1A7F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>MovieViewController.m</string>
-			<key>path</key>
-			<string>../MovieViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450117819417FF0000B1A7F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>MovieViewController.xib</string>
-			<key>path</key>
-			<string>../MovieViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450117919417FF0000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450117719417FF0000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450117A19417FF0000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450117819417FF0000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450117B1941804C000B1A7F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>TableViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450117C1941804C000B1A7F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TableViewCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450117D1941804C000B1A7F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>TableViewCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6450117E1941804C000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450117C1941804C000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6450117F1941804C000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6450117D1941804C000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>64501180194182E2000B1A7F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DetailsViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>64501181194182E2000B1A7F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DetailsViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>64501182194182E2000B1A7F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>DetailsViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>64501183194182E2000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>64501181194182E2000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>64501184194182E2000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>64501182194182E2000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>64501185194679F9000B1A7F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DVDViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>64501186194679F9000B1A7F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DVDViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>64501187194679F9000B1A7F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>DVDViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>64501188194679F9000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>64501186194679F9000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>64501189194679F9000B1A7F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>64501187194679F9000B1A7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7FED79CABDFB45AA9948CEA8</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-RottenTomatoesTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>81DF1BC8794A431085ED3FAC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>83566612D1304BAD812A3826</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>94E069F6727B4A948EBA78C2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-RottenTomatoes.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-RottenTomatoes.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B796A63D0017463F97AC6DC9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-RottenTomatoesTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>DB1D0D01EED04E9CB79F35D4</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-RottenTomatoes.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>F5289B9183704DE597031FC0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DB1D0D01EED04E9CB79F35D4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>6450113C19417FBB000B1A7F</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6450114819417FBB000B1A7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6450114719417FBB000B1A7F /* Foundation.framework */; };
+		6450114A19417FBB000B1A7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6450114919417FBB000B1A7F /* CoreGraphics.framework */; };
+		6450114C19417FBB000B1A7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6450114B19417FBB000B1A7F /* UIKit.framework */; };
+		6450115219417FBB000B1A7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6450115019417FBB000B1A7F /* InfoPlist.strings */; };
+		6450115419417FBB000B1A7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6450115319417FBB000B1A7F /* main.m */; };
+		6450115819417FBB000B1A7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6450115719417FBB000B1A7F /* AppDelegate.m */; };
+		6450115A19417FBB000B1A7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6450115919417FBB000B1A7F /* Images.xcassets */; };
+		6450116119417FBB000B1A7F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6450116019417FBB000B1A7F /* XCTest.framework */; };
+		6450116219417FBB000B1A7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6450114719417FBB000B1A7F /* Foundation.framework */; };
+		6450116319417FBB000B1A7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6450114B19417FBB000B1A7F /* UIKit.framework */; };
+		6450116B19417FBB000B1A7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6450116919417FBB000B1A7F /* InfoPlist.strings */; };
+		6450116D19417FBB000B1A7F /* RottenTomatoesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6450116C19417FBB000B1A7F /* RottenTomatoesTests.m */; };
+		6450117919417FF0000B1A7F /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6450117719417FF0000B1A7F /* MovieViewController.m */; };
+		6450117A19417FF0000B1A7F /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6450117819417FF0000B1A7F /* MovieViewController.xib */; };
+		6450117E1941804C000B1A7F /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6450117C1941804C000B1A7F /* TableViewCell.m */; };
+		6450117F1941804C000B1A7F /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6450117D1941804C000B1A7F /* TableViewCell.xib */; };
+		64501183194182E2000B1A7F /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64501181194182E2000B1A7F /* DetailsViewController.m */; };
+		64501184194182E2000B1A7F /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64501182194182E2000B1A7F /* DetailsViewController.xib */; };
+		64501188194679F9000B1A7F /* DVDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64501186194679F9000B1A7F /* DVDViewController.m */; };
+		64501189194679F9000B1A7F /* DVDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64501187194679F9000B1A7F /* DVDViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6450116419417FBB000B1A7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6450113C19417FBB000B1A7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6450114319417FBB000B1A7F;
+			remoteInfo = RottenTomatoes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6450114419417FBB000B1A7F /* RottenTomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenTomatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6450114719417FBB000B1A7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6450114919417FBB000B1A7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6450114B19417FBB000B1A7F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6450114F19417FBB000B1A7F /* RottenTomatoes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RottenTomatoes-Info.plist"; sourceTree = "<group>"; };
+		6450115119417FBB000B1A7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6450115319417FBB000B1A7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6450115519417FBB000B1A7F /* RottenTomatoes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RottenTomatoes-Prefix.pch"; sourceTree = "<group>"; };
+		6450115619417FBB000B1A7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6450115719417FBB000B1A7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6450115919417FBB000B1A7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6450115F19417FBB000B1A7F /* RottenTomatoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RottenTomatoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6450116019417FBB000B1A7F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6450116819417FBB000B1A7F /* RottenTomatoesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RottenTomatoesTests-Info.plist"; sourceTree = "<group>"; };
+		6450116A19417FBB000B1A7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6450116C19417FBB000B1A7F /* RottenTomatoesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RottenTomatoesTests.m; sourceTree = "<group>"; };
+		6450117619417FF0000B1A7F /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieViewController.h; path = ../MovieViewController.h; sourceTree = "<group>"; };
+		6450117719417FF0000B1A7F /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieViewController.m; path = ../MovieViewController.m; sourceTree = "<group>"; };
+		6450117819417FF0000B1A7F /* MovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MovieViewController.xib; path = ../MovieViewController.xib; sourceTree = "<group>"; };
+		6450117B1941804C000B1A7F /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		6450117C1941804C000B1A7F /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		6450117D1941804C000B1A7F /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		64501180194182E2000B1A7F /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		64501181194182E2000B1A7F /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		64501182194182E2000B1A7F /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		64501185194679F9000B1A7F /* DVDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVDViewController.h; sourceTree = "<group>"; };
+		64501186194679F9000B1A7F /* DVDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVDViewController.m; sourceTree = "<group>"; };
+		64501187194679F9000B1A7F /* DVDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DVDViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6450114119417FBB000B1A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6450114A19417FBB000B1A7F /* CoreGraphics.framework in Frameworks */,
+				6450114C19417FBB000B1A7F /* UIKit.framework in Frameworks */,
+				6450114819417FBB000B1A7F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6450115C19417FBB000B1A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6450116119417FBB000B1A7F /* XCTest.framework in Frameworks */,
+				6450116319417FBB000B1A7F /* UIKit.framework in Frameworks */,
+				6450116219417FBB000B1A7F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6450113B19417FBB000B1A7F = {
+			isa = PBXGroup;
+			children = (
+				6450114D19417FBB000B1A7F /* RottenTomatoes */,
+				6450116619417FBB000B1A7F /* RottenTomatoesTests */,
+				6450114619417FBB000B1A7F /* Frameworks */,
+				6450114519417FBB000B1A7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6450114519417FBB000B1A7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6450114419417FBB000B1A7F /* RottenTomatoes.app */,
+				6450115F19417FBB000B1A7F /* RottenTomatoesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6450114619417FBB000B1A7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6450114719417FBB000B1A7F /* Foundation.framework */,
+				6450114919417FBB000B1A7F /* CoreGraphics.framework */,
+				6450114B19417FBB000B1A7F /* UIKit.framework */,
+				6450116019417FBB000B1A7F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6450114D19417FBB000B1A7F /* RottenTomatoes */ = {
+			isa = PBXGroup;
+			children = (
+				6450117619417FF0000B1A7F /* MovieViewController.h */,
+				6450117719417FF0000B1A7F /* MovieViewController.m */,
+				6450117819417FF0000B1A7F /* MovieViewController.xib */,
+				64501180194182E2000B1A7F /* DetailsViewController.h */,
+				64501181194182E2000B1A7F /* DetailsViewController.m */,
+				64501182194182E2000B1A7F /* DetailsViewController.xib */,
+				6450117B1941804C000B1A7F /* TableViewCell.h */,
+				6450117C1941804C000B1A7F /* TableViewCell.m */,
+				6450117D1941804C000B1A7F /* TableViewCell.xib */,
+				6450115619417FBB000B1A7F /* AppDelegate.h */,
+				6450115719417FBB000B1A7F /* AppDelegate.m */,
+				64501185194679F9000B1A7F /* DVDViewController.h */,
+				64501186194679F9000B1A7F /* DVDViewController.m */,
+				64501187194679F9000B1A7F /* DVDViewController.xib */,
+				6450115919417FBB000B1A7F /* Images.xcassets */,
+				6450114E19417FBB000B1A7F /* Supporting Files */,
+			);
+			path = RottenTomatoes;
+			sourceTree = "<group>";
+		};
+		6450114E19417FBB000B1A7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6450114F19417FBB000B1A7F /* RottenTomatoes-Info.plist */,
+				6450115019417FBB000B1A7F /* InfoPlist.strings */,
+				6450115319417FBB000B1A7F /* main.m */,
+				6450115519417FBB000B1A7F /* RottenTomatoes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6450116619417FBB000B1A7F /* RottenTomatoesTests */ = {
+			isa = PBXGroup;
+			children = (
+				6450116C19417FBB000B1A7F /* RottenTomatoesTests.m */,
+				6450116719417FBB000B1A7F /* Supporting Files */,
+			);
+			path = RottenTomatoesTests;
+			sourceTree = "<group>";
+		};
+		6450116719417FBB000B1A7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6450116819417FBB000B1A7F /* RottenTomatoesTests-Info.plist */,
+				6450116919417FBB000B1A7F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6450114319417FBB000B1A7F /* RottenTomatoes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6450117019417FBB000B1A7F /* Build configuration list for PBXNativeTarget "RottenTomatoes" */;
+			buildPhases = (
+				6450114019417FBB000B1A7F /* Sources */,
+				6450114119417FBB000B1A7F /* Frameworks */,
+				6450114219417FBB000B1A7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RottenTomatoes;
+			productName = RottenTomatoes;
+			productReference = 6450114419417FBB000B1A7F /* RottenTomatoes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6450115E19417FBB000B1A7F /* RottenTomatoesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6450117319417FBB000B1A7F /* Build configuration list for PBXNativeTarget "RottenTomatoesTests" */;
+			buildPhases = (
+				0FB91EDF072C44C0B04B25D8 /* Check Pods Manifest.lock */,
+				6450115B19417FBB000B1A7F /* Sources */,
+				6450115C19417FBB000B1A7F /* Frameworks */,
+				6450115D19417FBB000B1A7F /* Resources */,
+				B796A63D0017463F97AC6DC9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6450116519417FBB000B1A7F /* PBXTargetDependency */,
+			);
+			name = RottenTomatoesTests;
+			productName = RottenTomatoesTests;
+			productReference = 6450115F19417FBB000B1A7F /* RottenTomatoesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6450113C19417FBB000B1A7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ozzie Sabina";
+				TargetAttributes = {
+					6450115E19417FBB000B1A7F = {
+						TestTargetID = 6450114319417FBB000B1A7F;
+					};
+				};
+			};
+			buildConfigurationList = 6450113F19417FBB000B1A7F /* Build configuration list for PBXProject "RottenTomatoes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6450113B19417FBB000B1A7F;
+			productRefGroup = 6450114519417FBB000B1A7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6450114319417FBB000B1A7F /* RottenTomatoes */,
+				6450115E19417FBB000B1A7F /* RottenTomatoesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6450114219417FBB000B1A7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6450117A19417FF0000B1A7F /* MovieViewController.xib in Resources */,
+				64501189194679F9000B1A7F /* DVDViewController.xib in Resources */,
+				6450117F1941804C000B1A7F /* TableViewCell.xib in Resources */,
+				64501184194182E2000B1A7F /* DetailsViewController.xib in Resources */,
+				6450115219417FBB000B1A7F /* InfoPlist.strings in Resources */,
+				6450115A19417FBB000B1A7F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6450115D19417FBB000B1A7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6450116B19417FBB000B1A7F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FB91EDF072C44C0B04B25D8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B796A63D0017463F97AC6DC9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-RottenTomatoesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6450114019417FBB000B1A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6450115819417FBB000B1A7F /* AppDelegate.m in Sources */,
+				64501183194182E2000B1A7F /* DetailsViewController.m in Sources */,
+				6450117E1941804C000B1A7F /* TableViewCell.m in Sources */,
+				6450117919417FF0000B1A7F /* MovieViewController.m in Sources */,
+				6450115419417FBB000B1A7F /* main.m in Sources */,
+				64501188194679F9000B1A7F /* DVDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6450115B19417FBB000B1A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6450116D19417FBB000B1A7F /* RottenTomatoesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6450116519417FBB000B1A7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6450114319417FBB000B1A7F /* RottenTomatoes */;
+			targetProxy = 6450116419417FBB000B1A7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6450115019417FBB000B1A7F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6450115119417FBB000B1A7F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6450116919417FBB000B1A7F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6450116A19417FBB000B1A7F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6450116F19417FBB000B1A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6450117219417FBB000B1A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RottenTomatoes/RottenTomatoes-Prefix.pch";
+				INFOPLIST_FILE = "RottenTomatoes/RottenTomatoes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6450117519417FBB000B1A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RottenTomatoes.app/RottenTomatoes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RottenTomatoes/RottenTomatoes-Prefix.pch";
+				INFOPLIST_FILE = "RottenTomatoesTests/RottenTomatoesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6450113F19417FBB000B1A7F /* Build configuration list for PBXProject "RottenTomatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6450116F19417FBB000B1A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6450117019417FBB000B1A7F /* Build configuration list for PBXNativeTarget "RottenTomatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6450117219417FBB000B1A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6450117319417FBB000B1A7F /* Build configuration list for PBXNativeTarget "RottenTomatoesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6450117519417FBB000B1A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6450113C19417FBB000B1A7F /* Project object */;
+}
