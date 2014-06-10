@@ -12,6 +12,7 @@
 #import "MovieCell.h"
 
 #import "EGORefreshTableHeaderView.h"
+#import "MBProgressHUD.h".
 #import "UIImageView+AFNetworking.h"
 
 @interface MovieViewController ()
@@ -104,7 +105,8 @@
     } else { // DVDs
         url = @"http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=nctwhbfyy2rvbgzu2x4fq6c6";
     }
-
+    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
@@ -112,6 +114,7 @@
     
         self.movies = object[@"movies"];
         [self.tableView reloadData];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
     }];
 }
 
