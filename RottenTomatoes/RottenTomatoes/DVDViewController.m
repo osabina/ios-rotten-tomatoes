@@ -7,12 +7,12 @@
 //
 
 #import "DVDViewController.h"
-#import "TableViewCell.h"
+#import "MovieCell.h"
 
 @interface DVDViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
-@property (nonatomic) NSArray *movies;
+@property (strong, nonatomic) NSArray *movies;
 
 @end
 
@@ -44,7 +44,7 @@
         [self.tableView reloadData];
     }];
 
-    [self.tableView registerNib:[UINib nibWithNibName:@"TableViewCell" bundle:nil] forCellReuseIdentifier:@"TableViewCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"MovieCell" bundle:nil] forCellReuseIdentifier:@"MovieCell"];
     
     self.tableView.rowHeight = 150;
 
@@ -64,12 +64,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TableViewCell"];
+    MovieCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MovieCell"];
     
     NSDictionary *movie = self.movies[indexPath.row];
     
-    cell.movieTitleLable.text = movie[@"title"];
-    cell.synopsisTable.text = movie[@"synopsis"];
+    cell.titleLabel.text = movie[@"title"];
+    cell.synopsisLabel.text = movie[@"synopsis"];
     return cell;
 }
 

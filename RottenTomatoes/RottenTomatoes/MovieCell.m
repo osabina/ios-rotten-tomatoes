@@ -1,16 +1,14 @@
 //
-//  TableViewCell.m
+//  MovieCell.m
 //  RottenTomatoes
 //
-//  Created by Osvaldo Sabina on 6/6/14.
+//  Created by Osvaldo Sabina on 6/10/14.
 //  Copyright (c) 2014 Ozzie Sabina. All rights reserved.
 //
 
-#import "TableViewCell.h"
+#import "MovieCell.h"
 
-@implementation TableViewCell
-
-
+@implementation MovieCell
 
 - (void)awakeFromNib
 {
@@ -23,6 +21,5 @@
 
     // Configure the view for the selected state
 }
-
 
 @end
