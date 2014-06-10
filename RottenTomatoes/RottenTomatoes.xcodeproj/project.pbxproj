@@ -56,9 +56,8 @@
 		6450116819417FBB000B1A7F /* RottenTomatoesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RottenTomatoesTests-Info.plist"; sourceTree = "<group>"; };
 		6450116A19417FBB000B1A7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6450116C19417FBB000B1A7F /* RottenTomatoesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RottenTomatoesTests.m; sourceTree = "<group>"; };
-		6450117619417FF0000B1A7F /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieViewController.h; path = ../MovieViewController.h; sourceTree = "<group>"; };
-		6450117719417FF0000B1A7F /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieViewController.m; path = ../MovieViewController.m; sourceTree = "<group>"; };
-		6450117819417FF0000B1A7F /* MovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MovieViewController.xib; path = ../MovieViewController.xib; sourceTree = "<group>"; };
+		6450117719417FF0000B1A7F /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
+		6450117819417FF0000B1A7F /* MovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
 		64501180194182E2000B1A7F /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		64501181194182E2000B1A7F /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		64501182194182E2000B1A7F /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
@@ -68,6 +67,7 @@
 		6465B7FD1946CDE200CCBAE4 /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
 		6465B7FE1946CDE200CCBAE4 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		6465B7FF1946CDE200CCBAE4 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		64CC68EE1946D283002E70AD /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +127,9 @@
 		6450114D19417FBB000B1A7F /* RottenTomatoes */ = {
 			isa = PBXGroup;
 			children = (
-				6450117619417FF0000B1A7F /* MovieViewController.h */,
 				6450117719417FF0000B1A7F /* MovieViewController.m */,
 				6450117819417FF0000B1A7F /* MovieViewController.xib */,
+				64CC68EE1946D283002E70AD /* MovieViewController.h */,
 				64501180194182E2000B1A7F /* DetailsViewController.h */,
 				64501181194182E2000B1A7F /* DetailsViewController.m */,
 				64501182194182E2000B1A7F /* DetailsViewController.xib */,
