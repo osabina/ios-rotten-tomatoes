@@ -23,7 +23,7 @@ Rotten Tomatoes app for iOS class
 
 **UI Demo:**
 
-insert me
+![demo gif](https://raw.githubusercontent.com/osabina/ios-rotten-tomatoes/master/rt_demo.gif)
 
 **Notes:**
 
