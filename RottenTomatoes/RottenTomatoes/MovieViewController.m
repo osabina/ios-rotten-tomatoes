@@ -11,6 +11,8 @@
 #import "DetailsViewController.h"
 #import "MovieCell.h"
 
+#import "UIImageView+AFNetworking.h"
+
 @interface MovieViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -76,6 +78,10 @@
     
     cell.titleLabel.text = movie[@"title"];
     cell.synopsisLabel.text = movie[@"synopsis"];
+
+    NSURL *posterUrl = [NSURL URLWithString:[movie valueForKeyPath:@"posters.detailed"]];
+    [cell.posterImage setImageWithURL:posterUrl placeholderImage:nil];
+    
     return cell;
 }
 
