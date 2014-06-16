@@ -66,9 +66,6 @@
     [self.synopsisScrollView setContentSize:CGSizeMake(self.contentView.frame.size.width -10 ,
                                                        self.contentView.frame.size.height + 200)];
 
-    // add container view to scroll view
-    self.synopsisScrollView.frame = self.view.frame;
-
 }
 
 

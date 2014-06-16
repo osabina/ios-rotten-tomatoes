@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Ozzie Sabina. All rights reserved.
 //
 
-#import <QuartzCore/QuartzCore.h>
-
 #import "MovieViewController.h"
 
 #import "DetailsViewController.h"
@@ -145,16 +143,12 @@
 
 - (void)reloadTableViewDataSource{
     
-	// should be calling your tableviews data source model to reload
-	_reloading = YES;
     [self loadData];
     
 }
 
 - (void)doneLoadingTableViewData{
     
-	//  model should call this when its done loading
-	_reloading = NO;
 	[_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
     
 }
@@ -183,12 +177,6 @@
     
 	[self reloadTableViewDataSource];
 	[self performSelector:@selector(doneLoadingTableViewData) withObject:nil afterDelay:3.0];
-    
-}
-
-- (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view{
-    
-	return _reloading; // should return if data source model is reloading
     
 }
 
