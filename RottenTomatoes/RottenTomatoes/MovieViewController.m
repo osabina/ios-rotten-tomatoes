@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Ozzie Sabina. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "MovieViewController.h"
 
 #import "DetailsViewController.h"
@@ -84,7 +86,13 @@
     cell.synopsisLabel.text = movie[@"synopsis"];
 
     NSURL *posterUrl = [NSURL URLWithString:[movie valueForKeyPath:@"posters.detailed"]];
-    [cell.posterImage setImageWithURL:posterUrl placeholderImage:nil];
+
+    // Fade in animation!
+    cell.posterImage.alpha = 0.0;
+    [cell.posterImage setImageWithURL:posterUrl];
+    [UIImageView animateWithDuration:2.0 animations:^{
+        cell.posterImage.alpha = 1.0;
+    }];
     
     return cell;
 }

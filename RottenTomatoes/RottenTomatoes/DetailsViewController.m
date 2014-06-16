@@ -40,8 +40,13 @@
     self.title= self.movie[@"title"];
 
     NSURL *posterUrl = [NSURL URLWithString:[self.movie valueForKeyPath:@"posters.detailed"]];
-    [self.posterImage setImageWithURL:posterUrl placeholderImage:nil];
 
+    // Fade in animation!
+    self.posterImage.alpha = 0.0;
+    [self.posterImage setImageWithURL:posterUrl];
+    [UIImageView animateWithDuration:2.0 animations:^{
+        self.posterImage.alpha = 1.0;
+    }];
     
     self.titleLabel.text = self.movie[@"title"];
     self.synopsisLabel.text = self.movie[@"synopsis"];

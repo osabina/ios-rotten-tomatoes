@@ -11,11 +11,11 @@ Rotten Tomatoes app for iOS class
 - User sees error message when there's a networking error.  You may not use UIAlertView to display the error. 
 - User can view movie details by tapping on a cell
 - Add a tab bar for Box Office and DVD. (optional)
+- All images fade in (optional)
 
 **User Stories (TODO/undone):**
 
 - Customize the highlight and selection effect of the cell. (optional)
-- All images fade in (optional)
 - Customize the navigation bar. (optional)
 - All images should be cached in memory and disk. In other words, images load immediately upon cold start (optional).
 - For the large poster, load the low-res image first, switch to high-res when complete (optional)
