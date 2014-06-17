@@ -21,11 +21,11 @@ Rotten Tomatoes app for iOS class
 - For the large poster, load the low-res image first, switch to high-res when complete (optional)
 - Add a search bar. (optional)
 
-**UI Demo:**
+**UI Demo**
 
 ![demo gif](https://raw.githubusercontent.com/osabina/ios-rotten-tomatoes/master/rt_demo.gif)
 
-**Notes:**
+**Notes**
 
 This took me about 15 hours +/- a couple of hours.
 
@@ -36,7 +36,7 @@ Things that drove me the most nuts (spent hours figuring out, 1 minute to fix on
 I used a CocoaPod control for the network error message, wasn't clear on the intent of the
 requirement to not use UIAlertView.
 
-** Credits **
+**Credits**
 
 Uses the following CocoaPods:
 
