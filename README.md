@@ -3,7 +3,7 @@ ios-rotten-tomatoes
 
 Rotten Tomatoes app for iOS class
 
-**User Stories (Complete):**
+**Completed User Stories**
 
 - User can view a list of movies from Rotten Tomatoes.  Poster images must be loading asynchronously.
 - User can pull to refresh the movie list.
@@ -13,7 +13,7 @@ Rotten Tomatoes app for iOS class
 - Add a tab bar for Box Office and DVD. (optional)
 - All images fade in (optional)
 
-**User Stories (TODO/undone):**
+**Optional (undone) User Stories**
 
 - Customize the highlight and selection effect of the cell. (optional)
 - Customize the navigation bar. (optional)
@@ -35,3 +35,14 @@ Things that drove me the most nuts (spent hours figuring out, 1 minute to fix on
 
 I used a CocoaPod control for the network error message, wasn't clear on the intent of the
 requirement to not use UIAlertView.
+
+** Credits **
+
+Uses the following CocoaPods:
+
+- AFNetworking
+- CSNotificationView
+- EGOTableViewPullRefresh
+- MBProgressHUD
+
+Additionally, demo gif captured with [LiceCap](http://www.cockos.com/licecap/)
