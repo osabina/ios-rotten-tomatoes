@@ -1,7 +1,7 @@
 ios-rotten-tomatoes
 ===================
 
-Rotten Tomatoes app for iOS class
+Rotten Tomatoes app for iOS class (Assignment #1)
 
 **Completed User Stories**
 
